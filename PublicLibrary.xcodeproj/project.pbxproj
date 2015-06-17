@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B09608CC1B2895640057956C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09608CB1B2895640057956C /* AppDelegate.swift */; };
-		B09608CE1B2895640057956C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09608CD1B2895640057956C /* ViewController.swift */; };
+		B09608CE1B2895640057956C /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09608CD1B2895640057956C /* LibraryTableViewController.swift */; };
 		B09608D11B2895640057956C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09608CF1B2895640057956C /* Main.storyboard */; };
 		B09608D31B2895640057956C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09608D21B2895640057956C /* Images.xcassets */; };
 		B09608D61B2895640057956C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09608D41B2895640057956C /* LaunchScreen.xib */; };
 		B09608E21B2895640057956C /* PublicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09608E11B2895640057956C /* PublicLibraryTests.swift */; };
+		B0D40BCD1B2E2FA900A92F6F /* PublicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D40BCC1B2E2FA900A92F6F /* PublicLibrary.swift */; };
+		B0D40BD11B2F57B100A92F6F /* ShelfTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D40BD01B2F57B100A92F6F /* ShelfTableViewController.swift */; };
+		B0D40BD31B2F57FC00A92F6F /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D40BD21B2F57FC00A92F6F /* BooksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		B09608C61B2895640057956C /* PublicLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09608CA1B2895640057956C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09608CB1B2895640057956C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B09608CD1B2895640057956C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B09608CD1B2895640057956C /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 		B09608D01B2895640057956C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B09608D21B2895640057956C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B09608D51B2895640057956C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B09608DB1B2895640057956C /* PublicLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09608E01B2895640057956C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09608E11B2895640057956C /* PublicLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicLibraryTests.swift; sourceTree = "<group>"; };
+		B0D40BCC1B2E2FA900A92F6F /* PublicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicLibrary.swift; sourceTree = "<group>"; };
+		B0D40BD01B2F57B100A92F6F /* ShelfTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfTableViewController.swift; sourceTree = "<group>"; };
+		B0D40BD21B2F57FC00A92F6F /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				B09608CB1B2895640057956C /* AppDelegate.swift */,
-				B09608CD1B2895640057956C /* ViewController.swift */,
+				B09608CD1B2895640057956C /* LibraryTableViewController.swift */,
 				B09608CF1B2895640057956C /* Main.storyboard */,
+				B0D40BD21B2F57FC00A92F6F /* BooksTableViewController.swift */,
+				B0D40BD01B2F57B100A92F6F /* ShelfTableViewController.swift */,
 				B09608D21B2895640057956C /* Images.xcassets */,
 				B09608D41B2895640057956C /* LaunchScreen.xib */,
 				B09608C91B2895640057956C /* Supporting Files */,
+				B0D40BCC1B2E2FA900A92F6F /* PublicLibrary.swift */,
 			);
 			path = PublicLibrary;
 			sourceTree = "<group>";
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B09608CE1B2895640057956C /* ViewController.swift in Sources */,
+				B09608CE1B2895640057956C /* LibraryTableViewController.swift in Sources */,
+				B0D40BD31B2F57FC00A92F6F /* BooksTableViewController.swift in Sources */,
 				B09608CC1B2895640057956C /* AppDelegate.swift in Sources */,
+				B0D40BCD1B2E2FA900A92F6F /* PublicLibrary.swift in Sources */,
+				B0D40BD11B2F57B100A92F6F /* ShelfTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				B09608E71B2895640057956C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B09608E81B2895640057956C /* Build configuration list for PBXNativeTarget "PublicLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				B09608EA1B2895640057956C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
